@@ -5,6 +5,7 @@ import { MapPin, Clock, Utensils, Star } from "lucide-react";
 export default function TullysLuxuryWebsite() {
   return (
     <div className="bg-black text-white min-h-screen font-sans">
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div
@@ -22,22 +23,20 @@ export default function TullysLuxuryWebsite() {
           transition={{ delay: 0.5, duration: 1 }}
           className="relative text-center max-w-4xl px-6"
         >
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6">
             Tully's Good Times
           </h1>
           <p className="text-xl text-gray-300 mb-8">
             Liverpool's Premier Sports Bar & Dining Experience
           </p>
+
           <div className="flex gap-4 justify-center">
-            <Button className="bg-white text-black px-8 py-6 text-lg rounded-2xl">
+            <button className="bg-white text-black px-8 py-3 rounded-xl">
               View Menu
-            </Button>
-            <Button
-              variant="outline"
-              className="px-8 py-6 text-lg rounded-2xl"
-            >
+            </button>
+            <button className="border px-8 py-3 rounded-xl">
               Book Table
-            </Button>
+            </button>
           </div>
         </motion.div>
       </section>
@@ -54,116 +53,58 @@ export default function TullysLuxuryWebsite() {
             <h2 className="text-4xl font-bold mb-6">
               Where Great Food Meets Good Times
             </h2>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              Experience Liverpool's most vibrant dining destination. From
-              signature wings and handcrafted burgers to premium drinks and
-              live sports — Tully's Good Times delivers unforgettable
-              experiences every night.
+            <p className="text-gray-400 text-lg">
+              Experience Liverpool's most vibrant dining destination.
             </p>
           </div>
 
-          <motion.div
+          <motion.img
             whileHover={{ scale: 1.03 }}
-            className="rounded-2xl overflow-hidden shadow-2xl"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            className="rounded-2xl"
+          />
         </motion.div>
       </section>
 
       {/* Features */}
       <section className="py-20 px-6 bg-neutral-950">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {[{
             icon: Utensils,
             title: "Premium Menu",
-            desc: "Award‑winning wings, handcrafted burgers & signature dishes"
+            desc: "Award-winning food"
           },{
             icon: Star,
             title: "Game Day Atmosphere",
-            desc: "Wall‑to‑wall TVs and unmatched sports energy"
+            desc: "Live sports vibes"
           },{
             icon: Clock,
             title: "Open Daily",
-            desc: "Serving great food & drinks until 11pm"
+            desc: "Till 11pm"
           }].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2 }}
-            >
-              <Card className="bg-black border-neutral-800 rounded-2xl">
-                <CardContent className="p-8">
-                  <item.icon className="mb-4" size={32} />
-                  <h3 className="text-xl font-semibold mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-400">{item.desc}</p>
-                </CardContent>
-              </Card>
+            <motion.div key={i}>
+              <div className="bg-black border p-8 rounded-2xl">
+                <item.icon className="mb-4" size={32} />
+                <h3 className="text-xl mb-2">{item.title}</h3>
+                <p className="text-gray-400">{item.desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>
       </section>
 
       {/* Location */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">
-            Visit Tully's Liverpool
-          </h2>
-
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="bg-neutral-900 p-10 rounded-2xl"
-          >
-            <div className="flex justify-center mb-6">
-              <MapPin size={28} />
-            </div>
-
-            <p className="text-lg mb-2">
-              311 7th N St, Liverpool, NY 13088
-            </p>
-
-            <p className="text-gray-400 mb-6">
-              United States
-            </p>
-
-            <Button className="rounded-2xl px-8 py-6">
-              Get Directions
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-28 bg-gradient-to-r from-neutral-900 to-black text-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-        >
-          <h2 className="text-5xl font-bold mb-6">
-            Good Food. Great Drinks. Better Times.
-          </h2>
-          <Button className="px-10 py-7 text-lg rounded-2xl">
-            View Full Menu
-          </Button>
-        </motion.div>
+      <section className="py-24 text-center">
+        <h2 className="text-4xl mb-6">Visit Us</h2>
+        <MapPin className="mx-auto mb-4" />
+        <p>311 7th N St, Liverpool, NY</p>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-neutral-800 text-center">
-        <h3 className="text-2xl font-semibold mb-2">
-          Tully's Good Times Liverpool
-        </h3>
-        <p className="text-gray-400">
-          Open Daily • Until 11PM
-        </p>
+      <footer className="py-12 text-center border-t">
+        <h3>Tully's Good Times</h3>
       </footer>
+
     </div>
   );
 }
