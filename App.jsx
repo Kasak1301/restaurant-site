@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Utensils, Star } from "lucide-react";
 
 export default function TullysLuxuryWebsite() {
