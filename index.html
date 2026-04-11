@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier Real Estate | Find Your Dream Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-brand">&#127968; Premier Realty</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#listings">Listings</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Get in Touch</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-wrap">
+      <p class="hero-tagline slide-down">Trusted. Local. Expert.</p>
+      <h1 class="slide-up">Find Your Perfect <span class="gold">Dream Home</span></h1>
+      <p class="hero-sub slide-up delay-1">Whether you're buying, selling, or investing — we make every move seamless and stress-free.</p>
+      <div class="hero-btns slide-up delay-2">
+        <button class="btn-primary" onclick="smoothScrollTo('listings')">View Listings</button>
+        <button class="btn-outline" onclick="smoothScrollTo('contact')">Talk to an Agent</button>
+      </div>
+      <div class="hero-stats slide-up delay-3">
+        <div class="stat"><span class="stat-num" data-target="500">0</span><span>+</span><p>Homes Sold</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="12">0</span><span>+</span><p>Years Experience</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Client Satisfaction</p></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <section id="listings">
+    <div class="section-header fade-in">
+      <p class="section-label">Featured Properties</p>
+      <h2>Homes You'll <span class="gold">Love</span></h2>
+      <p class="section-sub">Handpicked listings across the area's most sought-after neighborhoods.</p>
+    </div>
+    <div class="listings-grid">
+      <div class="listing-card fade-in">
+        <div class="listing-img img1"><span class="badge">For Sale</span></div>
+        <div class="listing-info">
+          <h3>Modern Family Villa</h3>
+          <p class="listing-location">&#128205; Oakwood Heights</p>
+          <p class="listing-price">$1,250,000</p>
+          <div class="listing-features">
+            <span>&#127968; 4 Beds</span><span>&#128705; 3 Baths</span><span>&#128208; 2,800 sqft</span>
+          </div>
+          <button class="btn-card" onclick="smoothScrollTo('contact')">Schedule Tour</button>
+        </div>
+      </div>
+      <div class="listing-card fade-in delay-1">
+        <div class="listing-img img2"><span class="badge new">New</span></div>
+        <div class="listing-info">
+          <h3>Downtown Luxury Condo</h3>
+          <p class="listing-location">&#128205; City Center</p>
+          <p class="listing-price">$780,000</p>
+          <div class="listing-features">
+            <span>&#127968; 2 Beds</span><span>&#128705; 2 Baths</span><span>&#128208; 1,400 sqft</span>
+          </div>
+          <button class="btn-card" onclick="smoothScrollTo('contact')">Schedule Tour</button>
+        </div>
+      </div>
+      <div class="listing-card fade-in delay-2">
+        <div class="listing-img img3"><span class="badge sold">Sold</span></div>
+        <div class="listing-info">
+          <h3>Charming Suburban Ranch</h3>
+          <p class="listing-location">&#128205; Maplewood Grove</p>
+          <p class="listing-price">$625,000</p>
+          <div class="listing-features">
+            <span>&#127968; 3 Beds</span><span>&#128705; 2 Baths</span><span>&#128208; 1,950 sqft</span>
+          </div>
+          <button class="btn-card" onclick="smoothScrollTo('contact')">Inquire</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-img-wrap fade-in">
+        <div class="about-img-box">
+          <div class="about-img-placeholder"><span>&#128100;</span></div>
+          <div class="about-badge-box"><strong>#1</strong><p>Top Agent 2024</p></div>
+        </div>
+      </div>
+      <div class="about-content fade-in delay-1">
+        <p class="section-label">Meet Your Agent</p>
+        <h2>Hi, I'm <span class="gold">Sarah Mitchell</span></h2>
+        <p>With over 12 years of experience in the local real estate market, I've helped hundreds of families find their perfect home. My approach is simple: listen first, then deliver results.</p>
+        <p>I specialize in residential sales, investment properties, and first-time buyer guidance across the greater metro area.</p>
+        <ul class="about-list">
+          <li>&#10003; Certified Residential Specialist (CRS)</li>
+          <li>&#10003; Accredited Buyer's Representative (ABR)</li>
+          <li>&#10003; Top 1% of agents in the region</li>
+          <li>&#10003; Free home valuation consultations</li>
+        </ul>
+        <button class="btn-primary" onclick="smoothScrollTo('contact')">Work With Me</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-header fade-in">
+      <p class="section-label">What I Offer</p>
+      <h2>Full-Service <span class="gold">Real Estate</span></h2>
+      <p class="section-sub">From your first consultation to closing day, I've got you covered every step of the way.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in"><div class="service-icon">&#127968;</div><h3>Home Buying</h3><p>Expert guidance through every step of the buying process — from search to closing.</p></div>
+      <div class="service-card fade-in delay-1"><div class="service-icon">&#128176;</div><h3>Home Selling</h3><p>Strategic marketing and pricing to sell your home fast and for top dollar.</p></div>
+      <div class="service-card fade-in delay-2"><div class="service-icon">&#128200;</div><h3>Investment Properties</h3><p>Identify high-yield opportunities and build your real estate portfolio with confidence.</p></div>
+      <div class="service-card fade-in delay-3"><div class="service-icon">&#128203;</div><h3>Free Home Valuation</h3><p>Get an accurate, data-driven estimate of your home's current market value — no strings attached.</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="section-header fade-in">
+      <p class="section-label">Client Stories</p>
+      <h2>What People <span class="gold">Are Saying</span></h2>
+    </div>
+    <div class="testimonials-track-wrap fade-in">
+      <div class="testimonials-track">
+        <div class="testimonial-card"><p>"Sarah made selling our home effortless. We had an offer in 3 days above asking price!"</p><div class="testimonial-author"><strong>— James & Linda K.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div class="testimonial-card"><p>"As first-time buyers, we were nervous. Sarah walked us through everything. Couldn't be happier!"</p><div class="testimonial-author"><strong>— Marcus T.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div class="testimonial-card"><p>"Professional, responsive, and incredibly knowledgeable. The best agent in the city, hands down."</p><div class="testimonial-author"><strong>— Priya & Anil S.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div class="testimonial-card"><p>"Sarah found us our dream home in a competitive market. Her negotiation skills are unmatched."</p><div class="testimonial-author"><strong>— Rachel M.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div class="testimonial-card"><p>"Sarah made selling our home effortless. We had an offer in 3 days above asking price!"</p><div class="testimonial-author"><strong>— James & Linda K.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+        <div class="testimonial-card"><p>"As first-time buyers, we were nervous. Sarah walked us through everything. Couldn't be happier!"</p><div class="testimonial-author"><strong>— Marcus T.</strong></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-info fade-in">
+        <p class="section-label">Let's Connect</p>
+        <h2>Ready to <span class="gold">Make a Move?</span></h2>
+        <p>Reach out today for a free, no-obligation consultation. Whether buying or selling, I'm here to help.</p>
+        <ul class="contact-details">
+          <li>&#128222; (555) 123-4567</li>
+          <li>&#128140; sarah@premierrealty.com</li>
+          <li>&#128205; 123 Main Street, Suite 200, Metro City</li>
+        </ul>
+      </div>
+      <form class="contact-form fade-in delay-1" onsubmit="handleSubmit(event)">
+        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+        <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+        <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
+        <div class="form-group">
+          <select>
+            <option value="" disabled selected>I'm interested in...</option>
+            <option>Buying a Home</option>
+            <option>Selling a Home</option>
+            <option>Investment Property</option>
+            <option>Free Home Valuation</option>
+          </select>
+        </div>
+        <div class="form-group"><textarea placeholder="Tell me more about what you're looking for..." rows="4"></textarea></div>
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+        <p class="form-success" id="formSuccess">&#10003; Message sent! I'll be in touch shortly.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#127968; <strong>Premier Realty</strong> &nbsp;|&nbsp; Sarah Mitchell, Licensed Real Estate Agent</p>
+    <p class="footer-copy">&copy; 2024 Premier Realty. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
